@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Weather Report</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+</head>
+<body>
+    <div class="container">
+        <h1 class="mt-5">Weather Report</h1>
+        <ul class="list-group mt-3">
+            <li class="list-group-item">City: {{ weather.city }}</li>
+            <li class="list-group-item">Timestamp: {{ weather.timestamp }}</li>
+            <li class="list-group-item">Temperature: {{ weather.temperature }}°C</li>
+            <li class="list-group-item">Apparent Temperature: {{ weather.temperatureApparent }}°C</li>
+            <li class="list-group-item">Dew Point: {{ weather.dewPoint }}°C</li>
+            <li class="list-group-item">Humidity: {{ weather.humidity }}%</li>
+            <li class="list-group-item">Wind Speed: {{ weather.windSpeed }} km/h</li>
+            <li class="list-group-item">Wind Direction: {{ weather.windDirection }}°</li>
+            <li class="list-group-item">Wind Gust: {{ weather.windGust }} km/h</li>
+            <li class="list-group-item">Pressure: {{ weather.pressureSurfaceLevel }} hPa</li>
+            <li class="list-group-item">Precipitation Probability: {{ weather.precipitationProbability }}%</li>
+            <li class="list-group-item">Cloud Cover: {{ weather.cloudCover }}%</li>
+            <li class="list-group-item">Visibility: {{ weather.visibility }} km</li>
+        </ul>
+        <a href="/" class="btn btn-info mt-3">Back to Home</a>
+    </div>
+</body>
+</html>

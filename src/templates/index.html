@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ClimaTrack</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+</head>
+<body>
+    <div class="container">
+        <h1 class="mt-5">Welcome to ClimaTrack</h1>
+        <form action="/get_weather" method="POST" class="mt-3">
+            <div class="form-group">
+                <label for="city">Select City:</label>
+                <select name="city" id="city" class="form-control">
+                    <option value="43.65107,-79.347015">Toronto</option>
+                    <option value="40.712776,-74.005974">New York</option>
+                    <option value="34.052235,-118.243683">Los Angeles</option>
+                    <option value="51.507351,-0.127758">London</option>
+                    <option value="48.856613,2.352222">Paris</option>
+                    <option value="35.689487,139.691711">Tokyo</option>
+                    <option value="55.755825,37.617298">Moscow</option>
+                    <option value="39.904202,116.407394">Beijing</option>
+                    <option value="28.613939,77.209023">Delhi</option>
+                    <option value="19.076090,72.877426">Mumbai</option>
+                    <option value="37.774929,-122.419418">San Francisco</option>
+                    <option value="52.520008,13.404954">Berlin</option>
+                    <option value="31.230391,121.473701">Shanghai</option>
+                    <option value="23.129110,113.264385">Guangzhou</option>
+                    <option value="41.902782,12.496366">Rome</option>
+                    <option value="19.432608,-99.133209">Mexico City</option>
+                    <option value="37.566536,126.977966">Seoul</option>
+                    <option value="13.756331,100.501762">Bangkok</option>
+                    <option value="33.868820,151.209290">Sydney</option>
+                    <option value="30.044420,31.235712">Cairo</option>
+                    <option value="25.276987,55.296249">Dubai</option>
+                    <option value="59.329323,18.068581">Stockholm</option>
+                    <option value="22.396428,114.109497">Hong Kong</option>
+                    <option value="45.421532,-75.697189">Ottawa</option>
+                    <option value="41.008240,28.978359">Istanbul</option>
+                    <option value="40.416775,-3.703790">Madrid</option>
+                    <option value="50.850346,4.351721">Brussels</option>
+                    <option value="52.367573,4.904139">Amsterdam</option>
+                    <option value="47.497913,19.040236">Budapest</option>
+                    <option value="6.524379,3.379206">Lagos</option>
+                    <option value="48.208174,16.373819">Vienna</option>
+                    <option value="3.139003,101.686852">Kuala Lumpur</option>
+                    <option value="45.464204,9.189982">Milan</option>
+                    <option value="1.352083,103.819839">Singapore</option>
+                    <option value="35.689487,139.691711">Tokyo</option>
+                    <option value="55.953251,-3.188267">Edinburgh</option>
+                    <option value="60.169856,24.938379">Helsinki</option>
+                    <option value="43.214050,27.914733">Varna</option>
+                    <option value="34.693738,135.502165">Osaka</option>
+                    <option value="33.448376,-112.074036">Phoenix</option>
+                    <option value="51.507351,-0.127758">London</option>
+                    <option value="37.983810,23.727539">Athens</option>
+                    <option value="43.710173,7.261953">Nice</option>
+                </select>
+            </div>
+            <button type="submit" class="btn btn-primary">Get Weather</button>
+        </form>
+    </div>
+</body>
+</html>
