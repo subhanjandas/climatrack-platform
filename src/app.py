@@ -1,3 +1,4 @@
+import os
 from flask import Flask, request, render_template, redirect, url_for
 from pymongo import MongoClient
 import requests
@@ -5,8 +6,12 @@ from datetime import datetime
 
 app = Flask(__name__)
 
+# Fetch MongoDB URI and Tomorrow.io API key from environment variables
+mongo_uri = os.getenv('MONGODB_URI')
+api_key = os.getenv('TOMORROW_API_KEY')
+
 # MongoDB setup
-client = MongoClient("mongodb://localhost:27017/")
+client = MongoClient(mongo_uri)
 db = client['climatrack']
 weather_collection = db['weather_data']
 
@@ -19,7 +24,6 @@ def get_weather():
     city_coords = request.form.get("city")
     if city_coords:
         lat, lon = city_coords.split(",")
-        api_key = 'v0Z4QXKPryNSpRoFJRRH1ZPDnNdZ1jkB'  # Replace with your Tomorrow.io API key
         url = f'https://api.tomorrow.io/v4/timelines?location={lat},{lon}&fields=temperature,temperatureApparent,dewPoint,humidity,windSpeed,windDirection,windGust,pressureSurfaceLevel,precipitationProbability,cloudCover,visibility&timesteps=1h&units=metric&apikey={api_key}'
 
         response = requests.get(url)
