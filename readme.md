@@ -93,7 +93,7 @@ ClimaTrack is a real-time weather monitoring and analytics platform that fetches
     - Ensure your application loads these variables using `os.getenv()` in your Python scripts.
 
 ## Understanding the Code
-### `src/app.py`
+#### `src/app.py`
 This file contains the main Flask application that handles the frontend and backend integration.
 - **Routes**:
   - `/`: Renders the home page (`index.html`).
@@ -232,7 +232,7 @@ This project is licensed under the MIT License.
 ### Example .env File
 ```env
 MONGODB_URI="your_mongodb_connection_string"
-TOMORROW_API_KEY="your
+TOMORROW_API_KEY="your_tomorrow_io_api_key"
 
 ```
 
