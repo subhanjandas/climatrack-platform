@@ -105,13 +105,13 @@ This file contains the main Flask application that handles the frontend and back
   - **Weather Data Fetching**: Uses the Tomorrow.io API to get weather data for the selected city.
   - **Data Storage**: Stores the fetched weather data in MongoDB.
   
-### `src/collect_weather_data.py`
+#### `src/collect_weather_data.py`
 This script is designed to be run periodically (using a scheduler) to fetch and store weather data.
 - **Functionality**:
   - **API Request**: Fetches weather data from Tomorrow.io API.
   - **Data Storage**: Stores the fetched data in MongoDB.
 
-### `src/templates/index.html`
+#### `src/templates/index.html`
 Contains a form for selecting a city and requesting weather data.
 - **Cities Included**:
   - Toronto
@@ -156,7 +156,7 @@ Contains a form for selecting a city and requesting weather data.
   - Athens
   - Nice
 
-### `src/templates/weather.html`
+#### `src/templates/weather.html`
 Displays the fetched weather data for the selected city.
 
 ## Running the Application Locally
